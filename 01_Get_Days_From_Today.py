@@ -7,7 +7,7 @@ def get_days_from_today(date_string: str) -> int:
         day_delta = today - date_conv # Обчислення різниці у днях
         return day_delta.days
     except ValueError:
-        raise ValueError("Неправильний формат дати. Використовуйте формат 'РРРР-ММ-ДД'.")
+        return f"Неправильний формат дати. Використовуйте формат 'РРРР-ММ-ДД'."
 
 
-print(get_days_from_today("2020-09-24"))
+print(get_days_from_today("2024-09-20"))
